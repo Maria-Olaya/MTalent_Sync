@@ -6,12 +6,12 @@ const WebSocket = require('ws'); // Importa WebSocket
 const mysql = require('mysql2');
 const path = require('path');
 const bodyParser = require('body-parser');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const fs = require('fs');
 const conexion = require('./dababase/database'); // Importa la conexión desde el archivo
 
 const app = express();
-const PORT = 3000;
+const PORT = 8080;
 
 // Configura el servidor HTTP con Express
 const server = http.createServer(app);

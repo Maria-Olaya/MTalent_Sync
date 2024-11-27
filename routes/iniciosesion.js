@@ -3,7 +3,8 @@ const router = express.Router();
 const conexion = require('../dababase/database');
 const upload = require('../config/multerConfig');
 const verificarAutenticacion = require('../middlewares/authMiddleware'); // Importa el middleware
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
+
 
 router.post('/login', (req, res) => {
     const { nombre_usuario, contrasena } = req.body;
