@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navegacion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+
+    <link rel="stylesheet" href="styles/construyendo.css"> <!-- Enlazamos un CSS para estilos generales -->
+</head>
+
+<body class="bg-feed">
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <nav>
+        <div class="logo">
+            <h1>M TalentSync</h1>
+        </div>
+        <!-- Botón de menú en móviles -->
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        
+        <div class="nav-links" id="nav-links">
+            <a href="feed.html" onclick="sessionStorage.setItem('tipoPublicacion', 'general')"> feed</a>
+            <a href="retos.html">Retos</a>    <!-- Feed con publicaciones de retos -->
+            <a href="ListaGrupos.html">Grupos</a>  <!-- Feed con publicaciones de grupos -->
+            <a href="chat.html">Chat</a>
+            <a id="perfilLink" href="#">Perfil</a> <!-- Enlace al perfil con ID para manipulación -->
+            <a href="https://www.magneto365.com/es">servicio de empleo</a>  
+        </div>
+         <div id="dropdown-arrow" class="dropdown-arrow"><i class="fas fa-chevron-down"></i></div>
+
+    </nav>
+
+    <!-- Contenedor para la imagen cuadrada -->
+    <div class="image-container">
+        <img src="../uploads/Magny.jpg" alt="Imagen cuadrada" class="square-image">
+    </div>
+
+
+    <script src="js/obtenerURLPerfil.js"></script>
+    <script>
+        // Llama a la función después de que el DOM esté completamente cargado
+        document.addEventListener('DOMContentLoaded', () => {
+            obtenerIdDeSesion(); // Llama a la función para obtener el ID de sesión
+        });
+
+
+
+
+
+        
+    // Agregar un evento al botón de menú
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("open"); // Cambiar la clase 'open' para mostrar u ocultar los enlaces
+        });
+
+        // Mostrar el botón de "volver al inicio" cuando el usuario haga scroll hacia abajo
+        window.onscroll = function() {
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // Función para regresar al inicio de la página con una animación suave
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+    </script>
+</body>
+</html>
