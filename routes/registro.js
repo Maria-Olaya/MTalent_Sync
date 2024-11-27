@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const conexion = require('../dababase/database');
 const upload = require('../config/multerConfig');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const UsuarioBuilder = require('../routes/UsuarioBuilder');
 
 
