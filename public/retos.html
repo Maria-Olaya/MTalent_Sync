@@ -11,7 +11,7 @@
     <title>M TalentSync</title>
     <style>
         .reacciones {
-            display: none; /* Ocultar inicialmente las reacciones */
+            display: none; 
         }
     </style>
 </head>
@@ -24,7 +24,6 @@
         <div class="logo">
             <h1>M TalentSync</h1>
         </div>
-        <!-- Botón de menú en móviles -->
         <button class="menu-toggle" id="menu-toggle">☰</button>
         
         <div class="nav-links" id="nav-links">
@@ -49,27 +48,26 @@
     </div>
 
     <script>
-        window.tipoPublicacion = 'reto'; // Cambia 'reto' por el tipo que desees usar
+        window.tipoPublicacion = 'reto'; 
 
         document.getElementById('linkNuevaReto').addEventListener('click', () => {
-            sessionStorage.setItem('tipoPublicacion', window.tipoPublicacion); // Almacena el tipo de publicación
+            sessionStorage.setItem('tipoPublicacion', window.tipoPublicacion); 
         });
     </script>
 
-    <!-- Importar archivos JavaScript 
-    <script src="js/publicaciones.js"></script>-->
+    
     <script type="module" src="js/cargarPublicaciones.js"></script>
 
     <script src="js/reacciones.js"></script>
     <script src="js/comentarios.js"></script>
     <script src="js/respuestas.js"></script>
     <script>
-        // Llamada inicial para cargar publicaciones
+        
         cargarPublicaciones();
 
         window.addEventListener('pageshow', function(event) {
             if (event.persisted) {
-                window.location.reload(); // Recargar la página al volver del historial
+                window.location.reload(); 
             }
         });
         
@@ -106,13 +104,12 @@
         lista.prepend(div);
     }
 
-    // Agregar un evento al botón de menú
     document.getElementById("menu-toggle").addEventListener("click", function() {
         const navLinks = document.getElementById("nav-links");
-        navLinks.classList.toggle("open"); // Cambiar la clase 'open' para mostrar u ocultar los enlaces
+        navLinks.classList.toggle("open"); 
     });
 
-    // Mostrar el botón de "volver al inicio" cuando el usuario haga scroll hacia abajo
+
     window.onscroll = function() {
         const scrollToTopBtn = document.getElementById("scrollToTopBtn");
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -122,7 +119,6 @@
         }
     };
 
-    // Función para regresar al inicio de la página con una animación suave
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }

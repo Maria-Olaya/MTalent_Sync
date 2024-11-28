@@ -1,9 +1,8 @@
-/* Reacciones */
+
 .reacciones {
-    display: none; /* Ocultar inicialmente las reacciones */
+    display: none; 
 }
 
-/* Grupo de contenido */
 .grupo {
     background-image: url('../uploads/12backgenerall.jpg');
     border: 1px solid #ddd;
@@ -20,17 +19,16 @@
 
 .grupo h3 {
     margin: 0;
-    font-size: 1.2em; /* Ajustado el tamaño */
+    font-size: 1.2em;
 }
 
 .grupo p {
     margin: 5px 0;
-    font-size: 1em; /* Tamaño estándar para párrafos */
+    font-size: 1em; 
 }
 
-/* Botón unirse */
 .btn-unir {
-    background: linear-gradient(to right, #4caf50, #81c784); /* Tonos verdes armoniosos */
+    background: linear-gradient(to right, #4caf50, #81c784);
     color: white;
     border: none;
     border-radius: 5px;
@@ -41,11 +39,10 @@
 }
 
 .btn-unir:hover {
-     background: #66bb6a; /* Color al pasar el cursor */
-  transform: scale(1.05); /* Ligeramente más grande */
+     background: #66bb6a; 
+  transform: scale(1.05);
 }
 
-/* Responsividad */
 @media (max-width: 768px) {
     .grupo {
         background-image: url('../uploads/grupo.png');
@@ -54,11 +51,11 @@
     }
 
     .grupo h3 {
-        font-size: 1.1em; /* Reducir tamaño de encabezado */
+        font-size: 1.1em; 
     }
 
     .grupo p {
-        font-size: 0.95em; /* Reducir tamaño de párrafo */
+        font-size: 0.95em; 
     }
 
     .btn-unir {
@@ -74,11 +71,11 @@
     }
 
     .grupo h3 {
-        font-size: 1em; /* Asegura que el tamaño del título sea adecuado */
+        font-size: 1em; 
     }
 
     .grupo p {
-        font-size: 0.9em; /* Reducir más el tamaño del párrafo */
+        font-size: 0.9em; 
     }
 
     .btn-unir {

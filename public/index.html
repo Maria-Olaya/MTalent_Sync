@@ -9,7 +9,6 @@
 <body>
   <div class="container">
     <div class="auth-box">
-      <!-- Formulario de Ingreso -->
       <div class="form" id="login-form">
         <h2>Iniciar Sesión</h2>
         <form action="/login" method="POST">
@@ -20,7 +19,6 @@
         <p>¿No tienes una cuenta? <a href="#register-form" class="toggle">Regístrate</a></p>
       </div>
 
-      <!-- Formulario de Registro -->
       <div class="form" id="register-form" style="display: none;">
         <h2>Registrarse</h2>
         <form action="/register" method="POST">
@@ -38,7 +36,6 @@
   </div>
 
   <script>
-    // Código para cambiar entre los formularios
     document.querySelectorAll('.toggle').forEach(link => {
       link.addEventListener('click', function(e) {
         e.preventDefault();

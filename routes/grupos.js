@@ -88,9 +88,6 @@ router.post('/grupos', verificarAutenticacion, (req, res) => {
     });
 });
 
-//obtener las publicaiones de un grupo en especifico
-// toma el ID_grupo de la publicacion que se le pasa y devuelve solo las publicaicones de ese grupo
-// Ruta para obtener las publicaciones de un grupo específico
 router.get('/grupos/:idGrupo/publicaciones', verificarAutenticacion, (req, res) => {
     const idGrupo = req.params.idGrupo; // Obtener el ID del grupo desde los parámetros de la URL
     

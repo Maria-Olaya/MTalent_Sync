@@ -20,7 +20,6 @@
         <div class="logo">
             <h1>M TalentSync</h1>
         </div>
-        <!-- Botón de menú en móviles -->
         <button class="menu-toggle" id="menu-toggle">☰</button>
         
         <div class="nav-links" id="nav-links">
@@ -43,21 +42,18 @@
     </div>
 
 
-<!-- Pantalla completa para visualizar una publicación --
-    <script src="js/publicaciones.js"></script> -->
+
     <script src="js/reacciones.js"></script>
     <script src="js/comentarios.js"></script>
     <script src="js/feedGrupo.js"></script>
     <script type="module" src="js/cargarPublicaciones.js"></script>
     <script>
         
-        // Agregar un evento al botón de menú
         document.getElementById("menu-toggle").addEventListener("click", function() {
             const navLinks = document.getElementById("nav-links");
-            navLinks.classList.toggle("open"); // Cambiar la clase 'open' para mostrar u ocultar los enlaces
+            navLinks.classList.toggle("open"); 
         });
 
-        // Mostrar el botón de "volver al inicio" cuando el usuario haga scroll hacia abajo
         window.onscroll = function() {
             const scrollToTopBtn = document.getElementById("scrollToTopBtn");
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -67,7 +63,6 @@
             }
         };
 
-        // Función para regresar al inicio de la página con una animación suave
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
@@ -77,15 +72,3 @@
 </body>
 </html>
 
-
-
-<!--
-mejorassssssssssss 
-cuando se crea un grupo como se es el creador se esta unido al grupo automaticamente
-
-cambiar lar reacciones 1 que si se da click salga el menu si se da doble click se borre 
-o que si se se esta pos un segundo sobre el boton reaccionar salga el menu si ya hay una reaccion y se le da click se borra
-
-cuando se crea un nuevo grupo se recetea los unidos?
-
--->

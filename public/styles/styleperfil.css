@@ -158,7 +158,6 @@ body {
     }
 }
 
-/* Pantallas muy pequeñas (hasta 480px) */
 @media (max-width: 480px) {
     .perfil-header {
         padding: 10px;

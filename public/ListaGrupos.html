@@ -22,7 +22,6 @@
         <div class="logo">
             <h1>M TalentSync</h1>
         </div>
-        <!-- Botón de menú en móviles -->
         <button class="menu-toggle" id="menu-toggle">☰</button>
         
         <div class="nav-links" id="nav-links">
@@ -40,20 +39,17 @@
         <div class="feed">
             <h2>Grupos</h2>
             <div id="grupoContainer">
-                <!-- Contenedor dinámico para los grupos -->
             </div>
         </div>
     </div>
 
     <script src="js/listaGrupos.js"></script>
 <script>
-    // Agregar un evento al botón de menú
         document.getElementById("menu-toggle").addEventListener("click", function() {
             const navLinks = document.getElementById("nav-links");
-            navLinks.classList.toggle("open"); // Cambiar la clase 'open' para mostrar u ocultar los enlaces
+            navLinks.classList.toggle("open");
         });
 
-        // Mostrar el botón de "volver al inicio" cuando el usuario haga scroll hacia abajo
         window.onscroll = function() {
             const scrollToTopBtn = document.getElementById("scrollToTopBtn");
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -63,7 +59,6 @@
             }
         };
 
-        // Función para regresar al inicio de la página con una animación suave
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         } 

@@ -1,23 +1,23 @@
 body {
-    background-image: url('background-image.jpg'); /* Ruta a tu imagen de fondo */
-    background-size: cover; /* Cubre toda la pantalla */
-    background-position: center; /* Centra la imagen de fondo */
+    background-image: url('background-image.jpg'); 
+    background-size: cover; 
+    background-position: center; 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e9f7f9; /* Color de fondo suave */
+    background-color: #e9f7f9; 
     display: flex;
-    flex-direction: column; /* Alineación vertical */
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    flex-direction: column; 
+    height: 100vh; 
 }
 
 header {
-    background: linear-gradient(90deg, #007bff, #0056b3); /* Degradado azul */
+    background: linear-gradient(90deg, #007bff, #0056b3); 
     color: white;
-    padding: 15px 30px; /* Espacio más amplio */
+    padding: 15px 30px; 
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Espacio entre los elementos */
+    justify-content: space-between; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     box-sizing: border-box;
@@ -26,34 +26,34 @@ header {
 header h1 {
     font-style: italic;
     margin: 0;
-    font-size: 24px; /* Tamaño de fuente aumentado */
-    letter-spacing: 1px; /* Espaciado entre letras */
+    font-size: 24px; 
+    letter-spacing: 1px; 
 }
 
 nav {
-    background: linear-gradient(90deg, #0056b3, #007bff); /* Degradado azul oscuro a azul claro */
+    background: linear-gradient(90deg, #0056b3, #007bff); 
     color: white;
     display: flex;
     flex-direction: column;
-    width: 180px; /* Ancho del menú */
-    padding: 20px 0; /* Espacio interno */
+    width: 180px; 
+    padding: 20px 0; 
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Menú fijo */
-    height: 100vh; /* Ocupa toda la altura */
-    overflow-y: auto; /* Permite desplazamiento si es necesario */
-    top: 0; /* Asegura que el menú se quede en la parte superior */
+    position: fixed; 
+    height: 100vh;
+    overflow-y: auto;
+    top: 0;
     left: 0;
 }
 
 nav .logo {
     text-align: center;
-    margin-bottom: 20px; /* Espacio entre el logo y el menú */
+    margin-bottom: 20px; 
 }
 
 nav a {
-    color: #95e1d3; /* Verde menta */
+    color: #95e1d3; 
     margin: 10px 0;
-    padding: 10px 15px; /* Padding ajustado */
+    padding: 10px 15px; 
     text-decoration: none;
     text-align: center;
     transition: background-color 0.3s, color 0.3s;
@@ -61,26 +61,26 @@ nav a {
 }
 
 nav a:hover {
-    color: #fff; /* Blanco */
-    background-color: #007bff; /* Azul claro */
+    color: #fff; 
+    background-color: #007bff;
 }
 
 .container {
     flex-grow: 1;
     display: flex;
-    flex-direction: column; /* Alinear verticalmente */
+    flex-direction: column; 
     margin: 20px;
     padding: 20px;
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    margin-left: 200px; /* Ajusta el margen izquierdo para no quedar detrás del menú */
+    margin-left: 200px; 
     box-sizing: border-box;
 }
 
 h2 {
-    margin-bottom: 15px; /* Espacio debajo del título */
-    color: #007bff; /* Color del título */
+    margin-bottom: 15px; 
+    color: #007bff; 
 }
 
 textarea {
@@ -106,16 +106,16 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s; /* Agregado transform para efectos */
+    transition: background-color 0.3s, transform 0.2s; 
 }
 
 button:hover {
     background-color: #0056b3;
-    transform: translateY(-2px); /* Efecto de elevación */
+    transform: translateY(-2px); 
 }
 
 input[type="file"] {
-    margin-bottom: 10px; /* Espacio inferior */
+    margin-bottom: 10px; 
     padding: 10px;
     border: 2px solid #007bff;
     border-radius: 4px;
@@ -127,37 +127,35 @@ input[type="file"]:focus {
     outline: none;
 }
 
-/* Media queries para responsive design */
 @media (max-width: 768px) {
-    /* Menú de navegación */
     nav {
-        width: 100%; /* Menú ocupa todo el ancho en pantallas pequeñas */
-        height: auto; /* Altura automática */
-        position: static; /* Cambia la posición a estática */
-        padding: 15px 0; /* Reduce el padding del menú */
-        box-shadow: none; /* Elimina la sombra */
+        width: 100%; 
+        height: auto; 
+        position: static; 
+        padding: 15px 0; 
+        box-shadow: none; 
     }
 
     nav a {
-        padding: 12px 20px; /* Ajusta padding de los enlaces */
+        padding: 12px 20px; 
     }
 
     .container {
-        margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
-        margin-top: 20px; /* Agrega espacio arriba */
-        width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+        margin-left: 0; 
+        margin-top: 20px; 
+        width: 100%;
     }
 
     header {
-        flex-direction: column; /* Cambia la dirección de los elementos a columna */
-        padding: 10px 20px; /* Menos espacio en dispositivos pequeños */
+        flex-direction: column; 
+        padding: 10px 20px; 
     }
 
     header h1 {
-        font-size: 20px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+        font-size: 20px; 
     }
 
     .container {
-        padding: 15px; /* Ajusta el padding del contenedor */
+        padding: 15px; 
     }
 }
