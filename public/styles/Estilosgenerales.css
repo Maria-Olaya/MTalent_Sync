@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e9f7f9; /* Fondo suave */
+    background-color: #d5f1eb; /* Fondo suave */
     display: flex;
     min-height: 100vh; /* Asegura que el contenido ocupe toda la pantalla */
     flex-direction: column; /* Para un diseño responsivo */
@@ -59,7 +59,7 @@ header h1 {
 }
 
 .bg-listaGrupo {
-    background-image: url('../uploads/1fondo2.jpg'); /* Asegúrate de que la ruta sea relativa */
+    background: linear-gradient(to right, red, blue);; /* Asegúrate de que la ruta sea relativa */
     background-size: cover;
     background-position: center;
 }
